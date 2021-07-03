@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Testando1') }}{% endblock %}
+
+{% block branding %}
+<h1 id="Teste"><a href="{% url 'admin:index' %}">aaaaaaaaaaaaaaaaaaa</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
